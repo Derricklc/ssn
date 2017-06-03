@@ -14,73 +14,93 @@ ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
-    background-color: #FAFAFA;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    overflow: hidden;
+    background-color: #fafafa;
+    height:50px;
 }
 
-ul.sidenav li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-bottom: solid #FF0000 1px;
+ul.sidenav .nv {
+    float: left;
 }
- 
-    ul.sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
+    ul.sidenav .nv a {
+        display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
     }
-    ul.sidenav li a {
+    .nvform{        /*text input code*/
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+    .srch {
+
         float: left;
-        padding: 15px;
     }
 
-ul.sidenav li a:hover:not(.active) {
+
+ul.sidenav .nv a:hover:not(.active) {
     background-color: #FF0000;
     color: white;
 }
 
-div.content {
-    margin-left: 25%;
-    padding: 1px 16px;
-    height: 1000px;
+input[type=text] {
+	margin-left: 20px;
+    width: 300px;
+    border: 2px solid #f00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fafafa; 
 }
 
-
-@media screen and (max-width: 900px) {
-    ul.sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    ul.sidenav li a {
-        float: left;
-        padding: 15px;
-    }
+.snin{
+	margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
 }
-
-@media screen and (max-width: 400px) {
-    ul.sidenav li a {
-        text-align: center;
-        float: none;
-    }
+.srch_btn{
+    background-color: #fafafa;
+    border: none;
+    border-radius: 5px
 }
-
+.srch_btn:hover{
+    background-color: #f00;
+    border: none;
+    color: #f8f8f8;
+}
+.srch_ico {
+	margin: 4px 12px 4px 12px;
+}
+.srch_ico:hover {
+	color: #f8f8f8;
+}
 </style>
 </head>
 <body>
 
 <ul class="sidenav">
-  <li><a class="active" href="#home"><strong>Home</strong></a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <li style="float:right">
-  		<a class="btn btn-default btn-sm" href="#about">
+	<li class="nv"><a class="active" href="#home"><strong>Home</strong></a></li>
+	<li class="nv"><a href="#news">About</a></li>
+	<li class="nv"><a href="#contact">Contact</a></li>
+	<li class="nv"><a href="#about">About</a></li>
+    <li class="nv">
+		<form class="nvform">
+		  <input class="text_in srch" type="text" name="search" placeholder="Search..">
+		  <button type="button" class="srch_btn" name="Search">
+		  		<span class="glyphicon glyphicon-search srch_ico"></span>
+		  </button>
+		</form>
+    </li>
+    <li style="float:right">
+  		<a class="btn btn-default btn-sm snin" href="#about">
   		Log In
   			<span class="glyphicon glyphicon-log-in"></span>
   		</a>
