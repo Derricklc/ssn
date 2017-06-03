@@ -30,6 +30,7 @@ ul.sidenav .nv {
 	    text-decoration: none;
     }
     .nvform{        /*text input code*/
+    	margin-left: 100px;
 		display: block;
 	    color: #000000;
 	    text-align: center;
@@ -82,15 +83,30 @@ input[type=text] {
 .srch_ico:hover {
 	color: #f8f8f8;
 }
+.nav_ico{
+	font-size:25px;
+}
 </style>
 </head>
 <body>
 
 <ul class="sidenav">
 	<li class="nv"><a class="active" href="#home"><strong>Home</strong></a></li>
-	<li class="nv"><a href="#news">About</a></li>
-	<li class="nv"><a href="#contact">Contact</a></li>
-	<li class="nv"><a href="#about">About</a></li>
+	<li class="nv">
+		<a href="#news">
+			<span class="glyphicon glyphicon-bell nav_ico"></span>
+		</a>
+	</li>
+	<li class="nv">
+		<a href="#news">
+			<span class="glyphicon glyphicon-upload nav_ico"></span>
+		</a>
+	</li>
+	<li class="nv">
+		<a href="#news">
+			<span class="glyphicon glyphicon-comment nav_ico"></span>
+		</a>
+	</li>
     <li class="nv">
 		<form class="nvform">
 		  <input class="text_in srch" type="text" name="search" placeholder="Search..">
