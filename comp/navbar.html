@@ -30,7 +30,7 @@ ul.sidenav .nv {
 	    text-decoration: none;
     }
     .nvform{        /*text input code*/
-    	margin-left: 100px;
+    	margin-left: 200px;
 		display: block;
 	    color: #000000;
 	    text-align: center;
@@ -49,8 +49,8 @@ ul.sidenav .nv a:hover:not(.active) {
 }
 
 input[type=text] {
-	margin-left: 20px;
-    width: 300px;
+	margin-left: 77px;
+    width: 700px;
     border: 2px solid #f00;
     border-top: none;
     border-left: none;
@@ -86,30 +86,86 @@ input[type=text] {
 .nav_ico{
 	font-size:25px;
 }
-
-/*______________________________tooltips_______________________________*/
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+@media screen and (max-width: 1600px) {
+	.nvform{        /*text input code*/
+    	margin-left: 200px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+		margin-left: 77px;
+	    width: 500px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
 }
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
+@media screen and (max-width: 1300px) {
+	.nvform{        /*text input code*/
+    	margin-left: 100px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+	    width: 300px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
 }
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+@media screen and (max-width: 1000px) {
+	.nvform{        /*text input code*/
+    	margin-left: 20px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+	    width: 300px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
+}
+@media screen and (max-width: 800px) {
+	.nvform{        /*text input code*/
+    	margin-left: 20px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+	    width: 190px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
 }
 </style>
 </head>
