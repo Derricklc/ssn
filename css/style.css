@@ -263,4 +263,201 @@ html code
   <span class="tooltiptext">Tooltip text</span>
 </div>
 */
+/*_____________________________________NAVBAR______________________________*/
+body {margin: 0;}
 
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fafafa;
+    height:50px;
+}
+
+ul.sidenav .nv {
+    float: left;
+}
+    ul.sidenav .nv a {
+        display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+    .nvform{        /*text input code*/
+    	margin-left: 200px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+    .srch {
+
+        float: left;
+    }
+
+
+ul.sidenav .nv a:hover:not(.active) {
+    background-color: #FF0000;
+    color: white;
+}
+
+input[type=text] {
+	margin-left: 77px;
+    width: 700px;
+    border: 2px solid #f00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fafafa; 
+}
+
+.snin{
+	margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+.srch_btn{
+    background-color: #fafafa;
+    border: none;
+    border-radius: 5px
+}
+.srch_btn:hover{
+    background-color: #f00;
+    border: none;
+    color: #f8f8f8;
+}
+.srch_ico {
+	margin: 4px 12px 4px 12px;
+}
+.srch_ico:hover {
+	color: #f8f8f8;
+}
+.nav_ico{
+	font-size:25px;
+}
+@media screen and (max-width: 1600px) {
+	.nvform{        /*text input code*/
+    	margin-left: 200px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+		margin-left: 77px;
+	    width: 500px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.nvform{        /*text input code*/
+    	margin-left: 100px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+	    width: 300px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.nvform{        /*text input code*/
+    	margin-left: 20px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+	    width: 300px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
+}
+@media screen and (max-width: 800px) {
+	.nvform{        /*text input code*/
+    	margin-left: 20px;
+		display: block;
+	    color: #000000;
+	    text-align: center;
+	    padding: 14px;
+	    text-decoration: none;
+    }
+	input[type=text] {
+	    width: 190px;
+	    border: 2px solid #f00;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    background-color: #fafafa;
+	}
+}
+/*html code
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<ul class="sidenav">
+	<li class="nv"><a class="active" href="#home"><strong>Home</strong></a></li>
+	<li class="nv">
+		<a href="#news">
+			<span class="glyphicon glyphicon-bell nav_ico"></span>
+		</a>
+	</li>
+	<li class="nv">
+		<a href="#news">
+			<span class="glyphicon glyphicon-upload nav_ico"></span>
+		</a>
+	</li>
+	<li class="nv">
+		<a href="#news">
+			<span class="glyphicon glyphicon-comment nav_ico"></span>
+		</a>
+	</li>
+    <li class="nv">
+		<form class="nvform">
+		  <input class="text_in srch" type="text" name="search" placeholder="Search..">
+		  <button type="button" class="srch_btn" name="Search">
+		  		<span class="glyphicon glyphicon-search srch_ico"></span>
+		  </button>
+		</form>
+    </li>
+    <li style="float:right">
+  		<a class="btn btn-default btn-sm snin" href="#about">
+  		Log In
+  			<span class="glyphicon glyphicon-log-in"></span>
+  		</a>
+  	</li>
+</ul>
+/*
